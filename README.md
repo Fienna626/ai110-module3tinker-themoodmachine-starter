@@ -1,67 +1,8 @@
-# The Mood Machine
+Submit a short summary added to the README. The summary should be 5–7 sentences covering:
 
-The Mood Machine is a simple text classifier that begins with a rule based approach and can optionally be extended with a small machine learning model. It tries to guess whether a short piece of text sounds **positive**, **negative**, **neutral**, or even **mixed** based on patterns in your data.
+The core concept students needed to understand
+Where students are most likely to struggle
+Where AI was helpful vs misleading
+One way they would guide a student without giving the answer
 
-This lab gives you hands on experience with how basic systems work, where they break, and how different modeling choices affect fairness and accuracy. You will edit code, add data, run experiments, and write a short model card reflection.
-
----
-
-## Repo Structure
-
-```plaintext
-├── dataset.py         # Starter word lists and example posts (you will expand these)
-├── mood_analyzer.py   # Rule based classifier with TODOs to improve
-├── main.py            # Runs the rule based model and interactive demo
-├── ml_experiments.py  # (New) A tiny ML classifier using scikit-learn
-├── model_card.md      # Template to fill out after experimenting
-└── requirements.txt   # Dependencies for optional ML exploration
-```
-
----
-
-## Getting Started
-
-1. Open this folder in VS Code.
-2. Make sure your Python environment is active.
-3. Install dependencies:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. Run the rule-based starter:
-
-    ```bash
-    python main.py
-    ```
-
-If pieces of the analyzer are not implemented yet, you will see helpful errors that guide you to the TODOs.
-
-To try the ML model later, run:
-
-```bash
-python ml_experiments.py
-```
-
----
-
-## What You Will Do
-
-During this lab you will:
-
-- Implement the missing parts of the rule based `MoodAnalyzer`.
-- Add new positive and negative words.
-- Expand the dataset with more posts, including slang, emojis, sarcasm, or mixed emotions.
-- Observe unusual or incorrect predictions and think about why they happen.
-- Train a tiny machine learning model and compare its behavior to your rule based system.
-- Complete the model card with your findings about data, behavior, limitations, and improvements.
-- The goal is to help you reason about how models behave, how data shapes them, and why even small design choices matter.
-
----
-
-## Tips
-
-- Start with preprocessing before updating scoring rules.
-- When debugging, print tokens, scores, or intermediate choices.
-- Ask an AI assistant to help create edge case posts or unusual wording.
-- Try examples that mislead or confuse your model. Failure cases teach you the most.
+This activity required students to understand the core concept of building simple implementations while developing awareness of how AI tools assist in coding tasks. A key challenge is that students may rely too heavily on AI, which limits their ability to practice problem-solving and understand underlying logic. Students are also likely to struggle with interpreting machine learning results, often assuming strong performance when the model may actually be overfitting due to limited or non-diverse data. AI tools like Claude Code are helpful for quickly generating working solutions and reducing syntax errors, but they can be misleading by masking gaps in understanding and encouraging passive learning. One way to guide a student without giving the answer is to ask targeted questions about their assumptions, such as how their model would perform on unseen or edge-case data. This encourages deeper thinking and helps them build stronger intuition about both coding and machine learning behavior.
